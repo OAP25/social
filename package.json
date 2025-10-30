@@ -2,14 +2,14 @@
   "name": "social-media-fullstack",
   "version": "1.0.0",
   "private": true,
-  "main": "server.js",
+  "main": "api/server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node api/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "concurrently \"npm run start-server\" \"npm run start-client\"",
-    "start-server": "nodemon server.js",
+    "start-server": "nodemon api/server.js",
     "start-client": "react-scripts start"
   },
   "engines": {
