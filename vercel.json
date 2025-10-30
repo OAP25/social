@@ -1,21 +1,14 @@
 {
   "version": 2,
   "buildCommand": "npm run build",
+  "installCommand": "npm install",
   "outputDirectory": "build",
-  "builds": [
-    {
-      "src": "api/server.js",
-      "use": "@vercel/node@2.x"
-    }
-  ],
+  "functions": {
+    "api/**/*.js": { "runtime": "nodejs18.x" },
+    "backend/**/*.js": { "runtime": "nodejs18.x" }
+  },
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "src": "/api/(.*)", "dest": "backend/server.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
