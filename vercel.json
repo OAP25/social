@@ -4,14 +4,17 @@
   "installCommand": "npm install",
   "outputDirectory": "build",
   "functions": {
-    "api/server.js": {
-      "runtime": "vercel-nodejs@3.0.0"
+    "api/**/*.js": {
+      "runtime": "nodejs18.x"
+    },
+    "backend/**/*.js": {
+      "runtime": "nodejs18.x"
     }
   },
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/server.js"
+      "dest": "backend/server.js"
     },
     {
       "src": "/(.*)",
