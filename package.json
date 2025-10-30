@@ -1,13 +1,31 @@
 
 {
+<<<<<<< HEAD
   "name": "social-media-frontend",
   "version": "1.0.0",
   "private": true,
+=======
+  "name": "social-media-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fullstack Social Media App (Frontend + Backend)",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "nodemon backend/server.js",
+    "backend": "npm run server"
+  },
+>>>>>>> 74b3f2e9c585322352dc4ba1edf1e01dfbbeace2
   "dependencies": {
     "axios": "^1.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
+<<<<<<< HEAD
     "react-scripts": "5.0.1"
   },
   "scripts": {
@@ -16,13 +34,40 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "backend": "npm run dev --prefix backend"
+=======
+    "react-scripts": "5.0.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1",
+    "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+>>>>>>> 74b3f2e9c585322352dc4ba1edf1e01dfbbeace2
   },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": ["react-app", "react-app/jest"]
   },
   "browserslist": {
+<<<<<<< HEAD
     "production": [">0.2%", "not dead", "not op_mini all"],
     "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+=======
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+>>>>>>> 74b3f2e9c585322352dc4ba1edf1e01dfbbeace2
   }
 }

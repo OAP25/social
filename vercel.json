@@ -3,14 +3,31 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "outputDirectory": "build",
+<<<<<<< HEAD
   "routes": [
     {
       "src": "/api/(.*)",
       "dest": "/backend/server.js"
+=======
+  "builds": [
+    {
+      "src": "**server.js**",
+      "use": "**@vercel/node@2.x**"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server.js"
+>>>>>>> 74b3f2e9c585322352dc4ba1edf1e01dfbbeace2
     },
     {
       "src": "/(.*)",
       "dest": "/index.html"
     }
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 74b3f2e9c585322352dc4ba1edf1e01dfbbeace2
