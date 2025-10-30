@@ -1,7 +1,6 @@
 {
   "name": "social-media-backend",
   "version": "1.0.0",
-  "description": "Social Media App Backend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -21,3 +20,4 @@
     "nodemon": "^3.0.1"
   }
 }
+
