@@ -3,11 +3,12 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "outputDirectory": "build",
-  "functions": {
-    "server.js": {
-      "runtime": "**vercel-node@20.x**"
+  "builds": [
+    {
+      "src": "**server.js**",
+      "use": "**@vercel/node@2.x**"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/api/(.*)",
